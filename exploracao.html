@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+      <meta charset="UTF-8"/>
+        <title>NeuroFlow - Explora o teu interior</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="CSS/style.css"/>
+        <link rel="stylesheet" href="CSS/exploracao.css">
+
+    </head>
+    <body>
+        <header class="cabecalho">
+            <div class="cabecalho-container">
+                <div class="logo">
+                    <a href="index.html">NeuroFlow</a>
+                </div>
+
+                <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">☰</button>
+                <nav class="nav-drawer" id="nav-drawer" aria-hidden="true">
+                    <div class="nav-panel" role="dialog" aria-modal="true" aria-label="Menu">
+                        <button class="nav-close" id="nav-close" type="button" aria-label="Fechar menu">✕</button>
+
+                        <ul class="nav-list">
+                            <li>
+                                <a href="index.html">Home</a>
+                            </li>
+
+                            <li class="has-submenu-mobile">
+                                <div class="nav-line">
+                                    <a href="mente.html">Mente</a>
+                                    <button class="nav-arrow" type="button" aria-label="Abrir submenu">▾</button>
+                                </div>
+
+                                <div class="nav-sub">
+                                    <a href="mente.html#visao-geral">Visão Geral</a>
+                                    <a href="mente.html#emocoes">Emoções</a>
+                                    <a href="mente.html#sonhos">Sonhos</a>
+                                    <a href="mente.html#memorias">Memórias</a>
+                                    <a href="mente.html#criatividade">Criatividade</a>
+                                    <a href="mente.html#raciocinio">Raciocínio</a>
+                                </div>
+                            </li>
+
+                            <li class="has-submenu-mobile">
+                                <div class="nav-line">
+                                    <a href="exploracao.html">Exploração</a>
+                                    <button class="nav-arrow" type="button" aria-label="Abrir submenu">▾</button>
+                                </div>
+                                <div class="nav-sub">
+                                    <a href="exploracao.html#foco">Foco</a>
+                                    <a href="exploracao.html#regulacao">Regulação</a>
+                                    <a href="exploracao.html#reflexos">Reflexos</a>
+                                    <a href="exploracao.html#raciocinio-logico">Raciocínio Lógico</a>
+                                </div>
+                            </li>
+
+                            <li class="has-submenu-mobile">
+                                <div class="nav-line">
+                                    <a href="sobre.html">Sobre</a>
+                                    <button class="nav-arrow" type="button" aria-label="Abrir submenu">▾</button>
+                                </div>
+                                <div class="nav-sub">
+                                    <a href="sobre.html#visao-proposito">Visão e Propósito</a>
+                                    <a href="sobre.html#faq">FAQ</a>
+                                </div>
+                            </li>
+
+                            <li class="has-submenu-mobile">
+                                <div class="nav-line">
+                                    <a href="contacto.html">Contacto</a>
+                                    <button class="nav-arrow" type="button" aria-label="Abrir submenu">▾</button>
+                                </div>
+                                <div class="nav-sub">
+                                    <a href="contacto.html#mindform">MindForm</a>
+                                    <a href="contacto.html#registos">Registos Guardados</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <nav class="nav">
+                    <ul class="menu">
+                        <li class="has-submenu">
+                            <a href="mente.html">Mente</a>
+                            <ul class="submenu">
+                                <li>
+                                    <a href="mente.html#visao-geral">Visão Geral</a>
+                                </li>
+                                <li>
+                                    <a href="mente.html#emocoes">Emoções</a>
+                                </li>
+                                <li>
+                                    <a href="mente.html#sonhos">Sonhos</a>
+                                </li>
+                                <li>
+                                    <a href="mente.html#memorias">Memórias</a>
+                                </li>
+                                <li>
+                                    <a href="mente.html#criatividade">Criatividade</a>
+                                </li>
+                                <li>
+                                    <a href="mente.html#raciocinio">Raciocínio</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="has-submenu">
+                            <a href="exploracao.html">Exploração</a>
+                            <ul class="submenu">
+                                <li>
+                                    <a href="exploracao.html#foco">Foco</a>
+                                </li>
+                                <li>
+                                    <a href="exploracao.html#regulacao">Regulação</a>
+                                </li>
+                                <li>
+                                    <a href="exploracao.html#reflexos">Reflexos</a>
+                                </li>
+                                <li>
+                                    <a href="exploracao.html#raciocinio-logico">Raciocínio Lógico</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="has-submenu">
+                            <a href="sobre.html">Sobre</a>
+                            <ul class="submenu">
+                                <li>
+                                    <a href="sobre.html#visao-proposito">Visão e Propósito</a>
+                                </li>
+                                <li>
+                                    <a href="sobre.html#faq">FAQ</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="has-submenu">
+                            <a href="contacto.html">Contacto</a>
+                            <ul class="submenu">
+                                <li>
+                                    <a href="contacto.html#mindform">MindForm</a>
+                                </li>
+                                <li>
+                                    <a href="contacto.html#registos">Registos Guardados</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="relogio" id="relogio"></div>
+            </div>
+        </header>
+
+        <main>
+            <section class="hero">
+                <div class="hero-texto">
+                    <h1>Laboratório Cognitivo</h1>
+                    <p>
+                        Bem-vindo ao centro de testes. Aqui transformamos conceitos abstratos em
+                        métricas: testa a tua inibição, foco e velocidade de reação.
+                    </p>
+
+                    <div class="hero-acoes">
+                        <a class="botao botao-primario" href="#stroop-container">Começar testes</a>
+                        <a class="botao botao-secundario" href="#raciocinio-logico">Ir para o Sudoku</a>
+                    </div>
+                </div>
+
+                <div class="hero-visual" aria-hidden="true">
+                    <div class="orbita"></div>
+                    <div class="orbita orbita-2"></div>
+                    <div class="hero-nucleo">
+                        <span>Lab<br>Mental</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="secao" id="foco">
+                <header class="secao-topo">
+                    <h2>Inibição Cognitiva</h2>
+                    <p>Este teste treina a capacidade de bloquear distrações e manter o foco exclusivo na informação visual</p>
+                    <p>Ignora a palavra lida. Foca-te apenas na cor visual da tinta.</p>
+                </header>
+
+                <article class="cartao exploracao-painel" id="stroop-container">
+                    <div class="stroop-header">
+                        <h3>Teste de Atenção Seletiva</h3>
+                        <div class="stroop-score">Pontos:
+                            <span id="stroop-pontos">0</span></div>
+                    </div>
+
+                    <p class="exploracao-texto">Clica na COR do texto, não na palavra!</p>
+
+                    <div id="stroop-palavra" class="stroop-word">PREPARADO?</div>
+
+                    <div class="stroop-botoes" id="stroop-opcoes">
+                        <button class="botao botao-primario" onclick="iniciarStroop()">INICIAR</button>
+                    </div>
+                </article>
+            </section>
+
+            <section class="secao" id="regulacao">
+                <header class="secao-topo">
+                    <h2>Regulação Autónoma</h2>
+                    <p>A respiração rítmica ajuda a reduzir a produção de cortisol e sincroniza a frequência cardíaca com o estado mental</p>
+                    <p>Sincronização visual para reduzir a frequência cardíaca.</p>
+                </header>
+
+                <article class="cartao exploracao-painel">
+                    <h3>Respiração Guiada</h3>
+                    <p class="exploracao-texto">Segue o ritmo do círculo: inspira quando cresce, expira quando encolhe.</p>
+
+                    <div class="respiracao-container">
+                        <div id="circulo-respiracao" class="circulo"></div>
+                        <div id="texto-respiracao" class="texto-centro">Pronto</div>
+                    </div>
+
+                    <div style="text-align:center">
+                        <button class="botao botao-secundario" id="btn-respirar">Iniciar Ciclo</button>
+                    </div>
+                </article>
+            </section>
+
+            <section class="secao" id="reflexos">
+                <header class="secao-topo">
+                    <h2>Velocidade Neural</h2>
+                    <p>Uma avaliação de latência da tua via motora. Aqui, o pensamento consciente é demasiado lento, é pura reação sináptica.</p>
+                    <p>Teste de latência motora. Reage aos estímulos visuais o mais rápido possível.</p>
+                </header>
+
+                <article class="cartao exploracao-painel" id="reflexo-container">
+                    <div class="exploracao-topo">
+                        <h3>Teste de Reflexos</h3>
+                        <div class="exploracao-badge" id="reflexo-badge">Inativo</div>
+                    </div>
+
+                    <div class="reflexo-stats">
+                        <span>Alvos:
+                            <strong id="reflexo-contador">0 / 5</strong>
+                        </span>
+                        <span>Tempo:
+                            <strong id="reflexo-tempo">0.00s</strong>
+                        </span>
+                    </div>
+
+                    <div class="reflexo-area" id="reflexo-area">
+                        <button class="botao botao-primario" id="reflexo-btn-start">Iniciar Teste</button>
+                        <div id="reflexo-alvo" class="reflexo-alvo"></div>
+                    </div>
+                </article>
+            </section>
+
+            <section class="secao" id="raciocinio-logico">
+                <header class="secao-topo">
+                    <h2>Raciocínio Lógico</h2>
+                    <p>Um treino intenso para a memória de trabalho.</p>
+                    <p>O teu lobo frontal é obrigado a manter várias regras e número ativos simultaneamente enquanto usa a dedução para preencher lacunas.</p>
+                </header>
+
+                <div class="cartao sudoku-painel">
+                    <div class="sudoku-topo">
+                        <div class="sudoku-opcoes">
+                            <label class="sudoku-label">
+                                Grelha:
+                                <select id="sudoku-size">
+                                    <option value="4">4x4 (Iniciante)</option>
+                                    <option value="9" selected="selected">9x9 (Padrão)</option>
+                                </select>
+                            </label>
+
+                            <div class="sudoku-vidas">
+                                Vidas:
+                                <span id="sudoku-lives">3</span>
+                            </div>
+                        </div>
+
+                        <div class="sudoku-botoes">
+                            <button class="botao botao-primario" id="sudoku-new" type="button">Novo Jogo</button>
+                            <button class="botao botao-secundario" id="sudoku-reset" type="button">Reiniciar</button>
+                        </div>
+                    </div>
+
+                    <p id="sudoku-msg" class="sudoku-msg">Preenche as células vazias.</p>
+
+                    <div id="sudoku-board" class="sudoku-board" aria-label="Grelha de Sudoku"></div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="rodape">
+            <div class="rodape-container">
+                <p>© 2025 NeuroFlow - Projeto académico AI I</p>
+                <nav class="rodape-links">
+                    <a href="index.html">Início</a>
+                    <a href="sobre.html">Sobre</a>
+                    <a href="contacto.html">Contacto</a>
+                </nav>
+            </div>
+        </footer>
+
+        <script src="JS/script.js"></script>
+        <script src="JS/exploracao.js"></script>
+    </body>
+</html>

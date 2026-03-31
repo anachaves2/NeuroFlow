@@ -1,0 +1,216 @@
+/* ===== mente.css (só Mente) ===== */
+
+.mente-chips{
+  display:flex;
+  flex-wrap:wrap;
+  gap:0.5rem;
+  margin-top:1rem;
+}
+.mente-chip{
+  font-size:0.78rem;
+  padding:0.25rem 0.6rem;
+  border-radius:999px;
+  border:1px solid rgba(148,163,253,0.35);
+  background: rgba(15,23,42,0.75);
+  color:#9ca3af;
+}
+
+.mente-grelha-destaque{
+  align-items: stretch;
+}
+.mente-cartao-destaque{
+  flex: 2 1 420px;
+  position: relative;
+}
+.mente-barra{
+  margin-top:0.9rem;
+  height:2px;
+  border-radius:999px;
+  background: linear-gradient(90deg, #22d3ee, #a855f7, #ec4899);
+  opacity:0.9;
+}
+.mente-nota{
+  color:#9ca3af;
+}
+
+.mente-cartao-estat{
+  flex:1 1 180px;
+  text-align:center;
+}
+.mente-numero{
+  font-size:2.2rem;
+  line-height:1;
+  margin-top:0.5rem;
+  color:#6afaff;
+  text-shadow:0 0 18px rgba(106,250,255,0.35);
+}
+.mente-legenda{
+  color:#9ca3af;
+  font-size:0.85rem;
+}
+
+.mente-cartao{
+  position: relative;
+  overflow:hidden;
+}
+.mente-cartao::before{
+  content:"";
+  position:absolute;
+  inset:-40% -30%;
+  background: radial-gradient(circle, rgba(34,211,238,0.18), transparent 55%);
+  transform: rotate(18deg);
+  opacity:0.6;
+  pointer-events:none;
+}
+
+.mente-painel{
+  margin-top:1rem;
+  border-color: rgba(34,211,238,0.35);
+}
+.mente-painel-topo{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:1rem;
+  margin-bottom:0.6rem;
+}
+.mente-badge{
+  padding:0.25rem 0.6rem;
+  border-radius:999px;
+  border:1px solid rgba(148,163,253,0.35);
+  color:#6afaff;
+}
+.mente-painel-texto{
+  color:#9ca3af;
+}
+.mente-botoes{
+  display:flex;
+  flex-wrap:wrap;
+  gap:0.6rem;
+  margin-top:0.8rem;
+}
+
+.mente-grelha-2{
+  display:flex;
+  flex-wrap:wrap;
+  gap:1rem;
+}
+.mente-cartao-quote{
+  flex: 1 1 260px;
+  border-color: rgba(168,85,247,0.35);
+  background: radial-gradient(circle at top left, rgba(168,85,247,0.18), rgba(15,23,42,0.98));
+}
+.mente-quote{
+  font-size:1.15rem;
+  margin-top:0.6rem;
+  color:#e5e7eb;
+}
+
+.mente-timeline{
+  display:flex;
+  flex-direction:column;
+  gap:1rem;
+}
+.mente-timeline-item{
+  display:flex;
+  gap:0.9rem;
+  align-items:flex-start;
+}
+.mente-ponto{
+  width:12px;
+  height:12px;
+  border-radius:50%;
+  background:#22d3ee;
+  box-shadow:0 0 12px rgba(34,211,238,0.55);
+  margin-top:0.35rem;
+}
+
+.mente-lab{
+  margin-top:1rem;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:1rem;
+  flex-wrap:wrap;
+}
+
+.mente-callout{
+  margin-top:1rem;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:1rem;
+  flex-wrap:wrap;
+  border-color: rgba(236,72,153,0.25);
+  background: radial-gradient(circle at top left, rgba(236,72,153,0.12), rgba(15,23,42,0.98));
+}
+
+/* =========================================
+   RESPONSIVIDADE (MOBILE) 
+   ========================================= */
+@media (max-width: 850px) {
+  
+  /*HERO TOTALMENTE CENTRADO */
+  .hero-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .hero-acoes {
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .mente-chips {
+    justify-content: center; /* Centra as etiquetas (Introspeção, etc.) */
+  }
+
+  /*Grelhas empilhadas */
+  .mente-grelha-destaque, 
+  .mente-grelha-2 {
+    flex-direction: column;
+  }
+
+  /*CARTÕES COM TEXTO CENTRADO */
+  /*Isto centra o texto dentro dos cartões azuis (Calma, Curiosidade, etc.) */
+  .mente-cartao,
+  .mente-cartao-destaque, 
+  .mente-cartao-estat, 
+  .mente-cartao-quote {
+    flex: 1 1 100%;      /* Largura total */
+    text-align: center;  /* Texto no meio */
+    align-items: center;
+  }
+
+  /*Painéis de ação (Callouts) empilhados e centrados */
+  .mente-callout, 
+  .mente-lab,
+  .mente-painel {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  /*Botões esticados e conteúdo centrado */
+  .mente-callout .botao, 
+  .mente-lab .botao,
+  .mente-botoes button {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .mente-botoes {
+    justify-content: center;
+    width: 100%;
+  }
+
+  /*Ajuste do topo do Painel Emocional */
+  .mente-painel-topo {
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: center;
+  }
+}

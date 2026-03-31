@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>NeuroFlow Explora o teu interior</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="CSS/style.css">
+    </head>
+    <body>
+        <header class="cabecalho">
+            <div class="cabecalho-container">
+                <div class="logo">
+                    <a href="index.html">NeuroFlow</a>
+                </div>
+
+                <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">☰</button>
+                <nav class="nav-drawer" id="nav-drawer" aria-hidden="true">
+                    <div class="nav-panel" role="dialog" aria-modal="true" aria-label="Menu">
+                        <button class="nav-close" id="nav-close" type="button" aria-label="Fechar menu">✕</button>
+
+                        <ul class="nav-list">
+                            <li>
+                                <a href="index.html">Home</a>
+                            </li>
+
+                            <li class="has-submenu-mobile">
+                                <div class="nav-line">
+                                    <a href="mente.html">Mente</a>
+                                    <button class="nav-arrow" type="button" aria-label="Abrir submenu">▾</button>
+                                </div>
+
+                                <div class="nav-sub">
+                                    <a href="mente.html#visao-geral">Visão Geral</a>
+                                    <a href="mente.html#emocoes">Emoções</a>
+                                    <a href="mente.html#sonhos">Sonhos</a>
+                                    <a href="mente.html#memorias">Memórias</a>
+                                    <a href="mente.html#criatividade">Criatividade</a>
+                                    <a href="mente.html#raciocinio">Raciocínio</a>
+                                </div>
+                            </li>
+
+                            <li class="has-submenu-mobile">
+                                <div class="nav-line">
+                                    <a href="exploracao.html">Exploração</a>
+                                    <button class="nav-arrow" type="button" aria-label="Abrir submenu">▾</button>
+                                </div>
+                                <div class="nav-sub">
+                                    <a href="exploracao.html#foco">Foco</a>
+                                    <a href="exploracao.html#regulacao">Regulação</a>
+                                    <a href="exploracao.html#reflexos">Reflexos</a>
+                                    <a href="exploracao.html#raciocinio-logico">Raciocínio Lógico</a>
+                                </div>
+                            </li>
+
+                            <li class="has-submenu-mobile">
+                                <div class="nav-line">
+                                    <a href="sobre.html">Sobre</a>
+                                    <button class="nav-arrow" type="button" aria-label="Abrir submenu">▾</button>
+                                </div>
+                                <div class="nav-sub">
+                                    <a href="sobre.html#visao-proposito">Visão e Propósito</a>
+                                    <a href="sobre.html#faq">FAQ</a>
+                                </div>
+                            </li>
+
+                            <li class="has-submenu-mobile">
+                                <div class="nav-line">
+                                    <a href="contacto.html">Contacto</a>
+                                    <button class="nav-arrow" type="button" aria-label="Abrir submenu">▾</button>
+                                </div>
+                                <div class="nav-sub">
+                                    <a href="contacto.html#mindform">MindForm</a>
+                                    <a href="contacto.html#registos">Registos Guardados</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <nav class="nav">
+                    <ul class="menu">
+                        <li class="has-submenu">
+                            <a href="mente.html">Mente</a>
+                            <ul class="submenu">
+                                <li>
+                                    <a href="mente.html#visao-geral">Visão Geral</a>
+                                </li>
+                                <li>
+                                    <a href="mente.html#emocoes">Emoções</a>
+                                </li>
+                                <li>
+                                    <a href="mente.html#sonhos">Sonhos</a>
+                                </li>
+                                <li>
+                                    <a href="mente.html#memorias">Memórias</a>
+                                </li>
+                                <li>
+                                    <a href="mente.html#criatividade">Criatividade</a>
+                                </li>
+                                <li>
+                                    <a href="mente.html#raciocinio">Raciocínio</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="has-submenu">
+                            <a href="exploracao.html">Exploração</a>
+                            <ul class="submenu">
+                                <li>
+                                    <a href="exploracao.html#foco">Foco</a>
+                                </li>
+                                <li>
+                                    <a href="exploracao.html#regulacao">Regulação</a>
+                                </li>
+                                <li>
+                                    <a href="exploracao.html#reflexos">Reflexos</a>
+                                </li>
+                                <li>
+                                    <a href="exploracao.html#raciocinio-logico">Raciocínio Lógico</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="has-submenu">
+                            <a href="sobre.html">Sobre</a>
+                            <ul class="submenu">
+                                <li>
+                                    <a href="sobre.html#visao-proposito">Visão e Propósito</a>
+                                </li>
+                                <li>
+                                    <a href="sobre.html#faq">FAQ</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="has-submenu">
+                            <a href="contacto.html">Contacto</a>
+                            <ul class="submenu">
+                                <li>
+                                    <a href="contacto.html#mindform">MindForm</a>
+                                </li>
+                                <li>
+                                    <a href="contacto.html#registos">Registos Guardados</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="relogio" id="relogio"></div>
+            </div>
+        </header>
+
+        <main>
+            <!-- HERO -->
+            <section class="hero">
+                <div class="hero-texto">
+                    <h1>Explora o teu interior. Visualiza o invisível.</h1>
+                    <p>
+                        O NeuroFlow é um espaço digital de introspeção, onde emoções, memórias, sonhos e
+                        raciocínio ganham forma através de metáforas visuais, animações subtis e
+                        experiências interativas.
+                    </p>
+                    <div class="hero-acoes">
+                        <a href="mente.html" class="botao botao-primario">Explorar a mente</a>
+                        <a href="exploracao.html" class="botao botao-secundario">Experiências interativas</a>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="orbita"></div>
+                    <div class="orbita orbita-2"></div>
+                    <div class="orbita orbita-3"></div>
+                    <div class="hero-nucleo">
+                        <span>Neuro<br/>Flow</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SLIDER -->
+            <section class="secao">
+                <header class="secao-topo">
+                    <h2>Fluxos de consciência</h2>
+                    <p>Frases e imagens que simbolizam diferentes estados mentais.</p>
+                </header>
+
+                <div class="slider" id="slider">
+                    <div class="slide active">
+                        <img src="Imagens/image1.jpg">
+                        <p>“Respira fundo. O teu universo interior expande-se em silêncio.”</p>
+                    </div>
+                    <div class="slide">
+                        <p>“As memórias são constelações: nem sempre vês todas, mas sabes que estão lá.”</p>
+                        <img src="Imagens/image2.jpg">
+                    </div>
+                    <div class="slide">
+                        <p>“Criatividade é a arte de ligar pontos que ainda não existem.”</p>
+                        <img src="Imagens/image3.png">
+                    </div>
+
+                    <button class="slider-botao slider-anterior" aria-label="Anterior">&#10094;</button>
+                    <button class="slider-botao slider-seguinte" aria-label="Seguinte">&#10095;</button>
+
+                    <div class="slider-pontos" id="slider-pontos"></div>
+                </div>
+            </section>
+
+            <!-- CAMADAS -->
+            <section class="secao">
+                <header class="secao-topo">
+                    <h2>Camadas da mente humana</h2>
+                    <p>Explora cinco dimensões simbólicas da tua vida interior.</p>
+                </header>
+
+                <div class="grelha grelha-5">
+                    <article class="cartao">
+                        <h3>Emoções</h3>
+                        <p>O campo onde sentimentos ganham forma.</p>
+                    </article>
+                    <article class="cartao">
+                        <h3>Sonhos</h3>
+                        <p>Narrativas simbólicas quando adormeces.</p>
+                    </article>
+                    <article class="cartao">
+                        <h3>Memórias</h3>
+                        <p>Fragmentos que constroem a tua identidade.</p>
+                    </article>
+                    <article class="cartao">
+                        <h3>Criatividade</h3>
+                        <p>O espaço onde ideias improváveis se encontram.</p>
+                    </article>
+                    <article class="cartao">
+                        <h3>Raciocínio</h3>
+                        <p>A camada lógica que organiza decisões.</p>
+                    </article>
+                </div>
+            </section>
+
+            <!-- ESTADO -->
+            <section class="secao">
+                <header class="secao-topo">
+                    <h2>Atividade cerebral em tempo real</h2>
+                    <p>Escolhe o teu estado mental atual e observa o feedback visual.</p>
+                </header>
+
+                <div class="estado">
+                    <div class="estado-opcoes">
+                        <button class="estado-botao" data-estado="calmo" type="button">Calmo</button>
+                        <button class="estado-botao" data-estado="moderado" type="button">Moderado</button>
+                        <button class="estado-botao" data-estado="intenso" type="button">Intenso</button>
+                    </div>
+
+                    <div class="estado-visual" id="estado-visual">
+                        <p id="estado-texto">
+                            Seleciona um estado para visualizar uma interpretação simbólica da tua atividade
+                            mental.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="secao secao-final">
+                <p>
+                    Pronto para ir mais fundo? Visita a página
+                    <a href="exploracao.html">Exploração</a>.
+                </p>
+            </section>
+        </main>
+
+        <footer class="rodape">
+            <div class="rodape-container">
+                <p>© 2025 NeuroFlow – Projeto académico AI I</p>
+                <nav class="rodape-links">
+                    <a href="index.html">Início</a>
+                    <a href="sobre.html">Sobre</a>
+                    <a href="contacto.html">Contacto</a>
+                </nav>
+            </div>
+        </footer>
+
+        <script src="JS/script.js"></script>
+    </body>
+</html>
