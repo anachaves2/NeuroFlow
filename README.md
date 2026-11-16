@@ -22,4 +22,4 @@
 * **Destaque**: Excelente organização de código e implementação de lógica de jogo fluída.
 
 ---
-*Desenvolvido por Ana Chaves - Estudante de Engenharia Informática @ IPV*
+*Desenvolvido por Ana Chaves - Estudante de Engenharia Informática @ UPV*
